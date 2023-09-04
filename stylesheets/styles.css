@@ -1,0 +1,25 @@
+body {
+  width: min-content;
+  margin: 0 auto;
+}
+body .header__heading {
+  text-align: center;
+}
+body .calculator {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+}
+body .calculator section.calculator__display {
+  padding: 8px;
+  border: 1px solid black;
+  text-align: right;
+}
+body .calculator section.calculator__button-container {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr/1fr 1fr 1fr 1fr;
+}
+body .calculator section.calculator__button-container .calculator__button {
+  width: 80px;
+  height: 40px;
+}

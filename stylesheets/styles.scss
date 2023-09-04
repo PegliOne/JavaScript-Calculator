@@ -1,0 +1,32 @@
+body {
+  width: min-content;
+  margin: 0 auto;
+
+  .header__heading {
+    text-align: center;
+  }
+
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+
+    section {
+      &.calculator__display {
+        padding: 8px;
+        border: 1px solid black;
+        text-align: right;
+      }  
+
+      &.calculator__button-container {
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+
+        .calculator__button {
+          width: 80px;
+          height: 40px;  
+        }
+      }
+    }
+  }
+}
